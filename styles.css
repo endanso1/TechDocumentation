@@ -1,1 +1,88 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  display: flex;
+}
+
+/* Navigation Bar */
+#navbar {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+#navbar header {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  display: block;
+  padding: 10px 0;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color: #555;
+}
+
+/* Main Documentation Section */
+#main-doc {
+  margin-left: 260px;
+  padding: 20px;
+}
+
+.main-section {
+  margin-bottom: 40px;
+}
+
+header {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+code {
+  background-color: #f4f4f4;
+  padding: 5px;
+  border: 1px solid #ccc;
+  display: block;
+  margin: 10px 0;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  #navbar {
+    width: 200px;
+    padding: 10px;
+  }
+
+  #main-doc {
+    margin-left: 210px;
+  }
+}
